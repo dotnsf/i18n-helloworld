@@ -12,8 +12,8 @@ app.use( i18n.init );
 
 app.get( '/', function( req, res ){
   res.contentType( 'text/plain; charset=utf-8' );
-  var hello = res.__("hello");
-  var name = res.__("world");
+  var hello = res.__( "hello" );
+  var name = res.__( "world" );
   if( req.query.name ){
     name = req.query.name;
   }
